@@ -103,7 +103,8 @@ header .header__content form {
     width: 90%;
     height: 60px;
     background-color: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 115px;
 }
 
@@ -113,8 +114,45 @@ header .header__content form input {
     height: 60px;
     background-color: #ffffff;
     border: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-left: 100px;
+}
+
+header .header__content form input::-webkit-input-placeholder {
+    color: #999999;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+}
+
+header .header__content form input::-moz-placeholder {
+    color: #999999;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+}
+
+header .header__content form input:-ms-input-placeholder {
+    color: #999999;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+}
+
+header .header__content form input::-ms-input-placeholder {
+    color: #999999;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
 }
 
 header .header__content form input::placeholder {
@@ -127,7 +165,8 @@ header .header__content form input::placeholder {
 }
 
 header .header__content form button {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #5474fd;
     border: none;
     max-width: 150px;
@@ -181,8 +220,12 @@ header .header__menu .menu__content {
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 header .header__menu .menu__content .menu__content-logo {
@@ -215,9 +258,16 @@ header .header__menu .menu__content label {
 }
 
 header .header__menu .menu__content .menu__content-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 14px;
     font-weight: 400;
     line-height: 80px;
@@ -241,6 +291,8 @@ header .header__menu .menu__content .menu__content-nav a {
     max-width: 1120px;
     width: 80%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 120px;
 }
@@ -300,10 +352,19 @@ header .header__menu .menu__content .menu__content-nav a {
     max-width: 980px;
     height: 190px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     background-image: url("../img/how-bg.png");
     background-size: 100%;
     background-position: center;
@@ -329,6 +390,8 @@ header .header__menu .menu__content .menu__content-nav a {
     height: 371px;
     padding-top: 230px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -361,11 +424,15 @@ header .header__menu .menu__content .menu__content-nav a {
 }
 
 .example .left {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .example .right {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 #example2 {
@@ -399,6 +466,8 @@ body {
     }
 
     header .header__menu .menu__content label {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -408,7 +477,10 @@ body {
 
     .why .why__content {
         padding-top: 10px;
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
 
     .why .why__content .why__content-text {
