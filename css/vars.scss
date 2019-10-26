@@ -1,0 +1,12 @@
+$headers-color: #fff;
+$text-color: #e8e8e8;
+
+$header-font: 'Josefin Sans', sans-serif;
+$text-font: 'Aleo', serif;
+
+
+
+%headers {
+    font-family: $header-font;
+    color: $headers-color;
+}

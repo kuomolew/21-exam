@@ -1,0 +1,32 @@
+@media screen and (max-width: 992px) {
+    header .header__menu .menu__content .menu__content-nav {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .header__menu .menu__content {
+        .menu__content-nav {
+            display: none;
+        }
+
+        label {
+            display: flex;
+        }
+    }
+     
+}
+
+@media screen and (max-width: 576px) {
+    header .header__content form {
+        input {
+            width: 100%;
+            padding-left: 5px;
+        }
+
+        button {
+            width: 200px;
+            margin-top: 10px;
+        }
+    }
+}
