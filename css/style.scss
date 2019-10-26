@@ -231,6 +231,32 @@ header {
 
 }
 
+.how {
+    width: 100%;
+    height: 337px;
+    background-color: #333333;
+
+    .how__content {
+        max-width: 980px;
+        height: 190px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-image: url('../img/how-bg.png');
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        padding-top: 50px;
+
+        p {
+            font-size: 36px;
+        }
+    }
+}
+
 
 body {
     background-color: #f00;
