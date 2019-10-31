@@ -298,6 +298,7 @@ header .header__menu .menu__content .menu__content-nav a {
 
 .how .how__content {
     max-width: 980px;
+    width: 95%;
     height: 190px;
     margin: 0 auto;
     display: flex;
@@ -313,6 +314,18 @@ header .header__menu .menu__content .menu__content-nav a {
 
 .how .how__content p {
     font-size: 36px;
+}
+
+.how .how__content p:nth-of-type(1) {
+    text-align: left;
+}
+
+.how .how__content p:nth-of-type(2) {
+    text-align: center;
+}
+
+.how .how__content p:nth-of-type(3) {
+    text-align: right;
 }
 
 .example {
@@ -356,7 +369,7 @@ header .header__menu .menu__content .menu__content-nav a {
     width: 90%;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625;
     padding-bottom: 30px;
 }
 
@@ -395,31 +408,76 @@ header .header__menu .menu__content .menu__content-nav a {
     margin: 0 auto;
 }
 
-.comments .comments__block .comments__image {
-    width: 40%;
+.comments .comments__image {
+    max-width: 445px;
+    width: 45%;
     height: 284px;
     background-image: url("../img/comments-img.jpg");
     background-size: cover;
     background-position: center;
-    background-color: #fff;
+    background-repeat: no-repeat;
 }
 
-.comments .comments__block .comments__text {
-    padding: 50px 40px 50px 60px;
+.comments .comments__text {
+    padding: 50px 30px 0 60px;
     max-width: 665px;
-    width: 60%;
+    width: 55%;
     background-color: #333333;
+    box-sizing: border-box;
 }
 
-.comments .comments__block .comments__text h2 {
+.comments .comments__text h2 {
     color: #fefefe;
     font-size: 20px;
     text-transform: uppercase;
     padding-bottom: 33px;
 }
 
+.comments .comments__text p {
+    color: #e8e8e8;
+    font-size: 14px;
+    line-height: 1.625;
+}
+
+footer {
+    width: 100%;
+    background-color: #232323;
+    text-align: center;
+    font-style: "Josefin Sans", sans-serif;
+    padding-top: 110px;
+    padding-bottom: 54px;
+}
+
+footer h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.36px;
+    padding-bottom: 15px;
+}
+
+footer h5 {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 180px;
+    width: 90%;
+}
+
+footer .social svg {
+    height: 14px;
+    fill: #e8e8e8;
+}
+
+footer .social svg:hover {
+    fill: #5474fd;
+}
+
 body {
-    background-color: #f00;
     color: #e8e8e8;
     font-family: "Aleo", serif;
 }
@@ -437,15 +495,54 @@ body {
     .why .why__content .why__content-images img {
         width: 90%;
     }
+
+    .comments .comments__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comments .comments__image {
+        height: 300px;
+        max-width: 665px;
+        width: 80%;
+        background-color: #fff;
+    }
+
+    .comments .comments__text {
+        width: 80%;
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    header .header__menu .menu__content .menu__content-logo {
+        font-size: 18px;
+    }
+
     header .header__menu .menu__content .menu__content-nav {
         display: none;
     }
 
     header .header__menu .menu__content label {
         display: flex;
+        width: 36px;
+        height: 36px;
+    }
+
+    header .header__content h1 {
+        font-size: 36px;
+    }
+
+    header .header__content h2 {
+        font-size: 18px;
+    }
+
+    header .header__content form input {
+        padding-left: 50px;
+    }
+
+    header .header__content form input::placeholder {
+        letter-spacing: 1.8px;
     }
 
     .why {
@@ -469,6 +566,10 @@ body {
 
     .why .why__content .why__content-images img {
         width: 45%;
+    }
+
+    .how .how__content p {
+        font-size: 24px;
     }
 }
 
@@ -501,5 +602,54 @@ body {
 
     .why .why__content .why__content-images img:nth-of-type(2) {
         float: none;
+    }
+
+    .example .example__content .example__cart {
+        padding-right: 20px;
+    }
+
+    .example .example__content .example__cart h2 {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .example .example__content .example__cart h1 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .example .example__content .example__cart p {
+        font-size: 14px;
+    }
+
+    .example .example__content .example__cart button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .comments {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .comments h1 {
+        padding-bottom: 30px;
+    }
+
+    .comments .comments__image {
+        height: 200px;
+        max-width: 665px;
+        width: 90%;
+        background-color: #fff;
+    }
+
+    .comments .comments__text {
+        padding: 30px 10px 10px 10px;
+        width: 90%;
+    }
+
+    footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }

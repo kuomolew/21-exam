@@ -15,16 +15,57 @@
             }
         }
     }
+
+    .comments {
+        .comments__block {
+            flex-direction: column;
+            align-items: center;
+        }
+        .comments__image {
+            height: 300px;
+            max-width: 665px;
+            width: 80%;
+            background-color: #fff;
+            
+        }
+        .comments__text{
+            width: 80%;
+            padding-bottom: 50px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-    header .header__menu .menu__content {
-        .menu__content-nav {
-            display: none;
+    header {
+        .header__menu .menu__content {
+            .menu__content-logo{
+                font-size: 18px;
+            }
+            .menu__content-nav {
+                display: none;
+            }
+    
+            label {
+                display: flex;
+                width: 36px;
+                height: 36px;
+            }
         }
-
-        label {
-            display: flex;
+        .header__content {
+            h1 {
+                font-size: 36px;
+            }
+            h2{
+                font-size: 18px;
+            }
+            form{
+                input{
+                    padding-left: 50px;
+                }
+                input::placeholder{
+                    letter-spacing: 1.8px;
+                }
+            }
         }
     }
 
@@ -47,6 +88,14 @@
                 img {
                     width: 45%;
                 }
+            }
+        }
+    }
+
+    .how {
+        .how__content{
+            p {
+                font-size: 24px;
             }
         }
     }
@@ -90,6 +139,54 @@
             }
         }
         
+    }
+
+    .example {
+        .example__content {
+            .example__cart {
+                padding-right: 20px;
+                h2 {
+                    font-size: 16px;
+                    padding-top: 20px;
+                }
+                h1 {
+                    font-size: 16px;
+                    padding-top: 10px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                button{
+                    display: block;
+                    margin: 0 auto;
+                    
+                }
+            }
+        }
+    }
+
+    .comments {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h1{
+            padding-bottom: 30px;
+        }
+        .comments__image {
+            height: 200px;
+            max-width: 665px;
+            width: 90%;
+            background-color: #fff;
+            
+        }
+        .comments__text{
+            padding: 30px 10px 10px 10px;
+            width: 90%;
+        }
+    }
+
+    footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     
 }

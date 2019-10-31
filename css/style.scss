@@ -238,6 +238,7 @@ header {
 
     .how__content {
         max-width: 980px;
+        width: 95%;
         height: 190px;
         margin: 0 auto;
         display: flex;
@@ -248,11 +249,19 @@ header {
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
-
         padding-top: 50px;
 
         p {
             font-size: 36px;
+        }
+        p:nth-of-type(1){
+            text-align: left;
+        }
+        p:nth-of-type(2){
+            text-align: center;
+        }
+        p:nth-of-type(3){
+            text-align: right;
         }
     }
 }
@@ -299,7 +308,7 @@ header {
                 width: 90%;
                 font-size: 16px;
                 font-weight: 400;
-                line-height: 26px;
+                line-height: 1.625;
                 padding-bottom: 30px;
             }
 
@@ -343,37 +352,78 @@ header {
         display: flex;
         flex-wrap: nowrap;
         margin: 0 auto;
-        .comments__image {
-            width: 40%;
-            height: 284px;
-            background-image: url('../img/comments-img.jpg');
-            background-size: cover;
-            background-position: center;
-            background-color: #fff;
+        
+    }
+    .comments__image {
+        max-width: 445px;
+        width: 45%;
+        height: 284px;
+        background-image: url('../img/comments-img.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    .comments__text {
+        padding: 50px 30px 0 60px;
+        max-width: 665px;
+        width: 55%;
+        background-color: #333333;
+        box-sizing: border-box;
+        
+        h2 {
+            color: #fefefe;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding-bottom: 33px;
         }
-        .comments__text {
-            padding: 50px 40px 50px 60px;
-            max-width: 665px;
-            width: 60%;
-            background-color: #333333;
-            h2 {
-                color: #fefefe;
-                font-size: 20px;
-                text-transform: uppercase;
-                padding-bottom: 33px;
-            }
+        p {
+            color: #e8e8e8;
+            font-size: 14px;
+            line-height: 1.625;
         }
     }
+    
 
+}
+
+footer {
+    width: 100%;
+    background-color: #232323;
+    text-align: center;
+    font-style: $header-font;
+    padding-top: 110px;
+    padding-bottom: 54px;
+    h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 3.36px;
+        padding-bottom: 15px;
+    }
+    h5 {
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+    .social {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 180px;
+        width: 90%;
+        svg {
+            height: 14px;
+            fill: #e8e8e8;
+        }
+        svg:hover {
+            fill: #5474fd;
+        }
+    }
 }
 
 
 body {
-    background-color: #f00;
     color: $text-color;
     font-family: $text-font;
-
-    
 }
 
 
