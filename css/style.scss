@@ -323,7 +323,48 @@ header {
 }
 
 .comments {
-    
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    background-image: url('../img/comments-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        @extend %headers;
+        padding-bottom: 94px;
+    }
+
+    .comments__block {
+        max-width: 1110px;
+        width: 80%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        .comments__image {
+            width: 40%;
+            height: 284px;
+            background-image: url('../img/comments-img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: #fff;
+        }
+        .comments__text {
+            padding: 50px 40px 50px 60px;
+            max-width: 665px;
+            width: 60%;
+            background-color: #333333;
+            h2 {
+                color: #fefefe;
+                font-size: 20px;
+                text-transform: uppercase;
+                padding-bottom: 33px;
+            }
+        }
+    }
+
 }
 
 
