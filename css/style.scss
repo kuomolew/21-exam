@@ -80,6 +80,9 @@ header {
                 cursor: pointer;
                 
             }
+            button:hover {
+                background-color: darken($color: #5474fd, $amount: 5);
+            }
         }
 
         h3 {
@@ -90,7 +93,6 @@ header {
             line-height: 26px;
             letter-spacing: 2.8px;
             opacity: 0.8;
-            color: #f00;
             width: 200px;
             height: 50px;
             margin: 0 auto;
@@ -207,6 +209,9 @@ header {
                 margin-top: 30px;
                 @extend %button;
             }
+            button:hover {
+                @extend %button-hover;
+            }
         }
 
         .why__content-images {
@@ -315,6 +320,9 @@ header {
             button {
                 @extend %button;
             }
+            button:hover {
+                @extend %button-hover;
+            }
         }
     }
 
@@ -381,6 +389,20 @@ header {
             color: #e8e8e8;
             font-size: 14px;
             line-height: 1.625;
+            text-indent: 5%;
+            position: relative;
+        }
+        p:before{
+            width: 20px;
+            height: 25px;
+            background-image: url('../img/quotes.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -15px;
         }
     }
     
