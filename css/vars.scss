@@ -28,3 +28,10 @@ $text-font: 'Aleo', serif;
         height: 100%;
     }
 }
+
+%button-hover {
+    background-color: #ffffff;
+    a {
+        color: #5474fd;
+    }
+}
